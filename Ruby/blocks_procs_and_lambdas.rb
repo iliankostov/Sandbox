@@ -135,7 +135,6 @@ delimiter
 
 my_array = ["raindrops", :kettles, "whiskers", :mittens, :packages]
 
-# Add your code below!
 symbols_filter = lambda { |p| p.is_a? Symbol }
 
 symbols = my_array.select(&symbols_filter)
@@ -153,7 +152,6 @@ delimiter
 
 ages = [23, 101, 7, 104, 11, 94, 100, 121, 101, 70, 44]
 
-# Add your code below!
 under_100 = Proc.new do |n|
   n < 100
 end
@@ -173,7 +171,7 @@ crew = {
     chief_engineer: "LaForge",
     doctor: "Crusher"
 }
-# Add your code below!
+
 first_half = lambda { |_, value| value < 'M' }
 
 crew.select(&first_half).each { |k,v| puts k.to_s << ' ' << v }

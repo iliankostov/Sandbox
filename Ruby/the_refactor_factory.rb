@@ -10,4 +10,4 @@ def first_n_primes(n)
   prime.first n
 end
 
-first_n_primes(10)
+puts first_n_primes(10)
